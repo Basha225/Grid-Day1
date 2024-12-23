@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(136, 129, 129);
+}
+.container>* {
+    background-color: yellow;
+    color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    height: 80vh;
+    width: 80vw;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: grid;
+    grid-template-columns: repeat(3, .4fr);
+    grid-template-rows: 70px 150px 150px 100px;
+    text-align: center;
+    gap: 10px;
+    padding: 10px;
+
+}
+
+.head {
+    background: rgb(53, 56, 154);
+    background: linear-gradient(90deg, rgba(53, 56, 154, 1) 9%, rgba(100, 107, 165, 1) 46%, rgba(80, 152, 179, 1) 100%);
+    grid-column: 1/4;
+    border: 3px solid #000;
+    border-radius: 5px;
+}
+
+.sidebar {
+    /* background-color: blue; */
+    background: rgb(108, 194, 211);
+    background: linear-gradient(90deg, rgba(108, 194, 211, 1) 9%, rgba(132, 190, 216, 1) 46%, rgba(125, 194, 220, 1) 100%);
+    grid-row: 2/4;
+    border: 3px solid #000;
+    border-radius: 5px;
+}
+
+.content1 {
+    /* background-color: lightcoral; */
+    background: rgb(75, 83, 105);
+    background: linear-gradient(90deg, rgba(75, 83, 105, 1) 9%, rgba(127, 184, 229, 1) 46%, rgba(117, 229, 233, 1) 100%);
+    grid-row: 2/3;
+    grid-column: 2/4;
+    border: 3px solid #000;
+    border-radius: 5px;
+}
+
+.content2 {
+    /* background-color: lightgreen; */
+    background: rgb(83, 85, 119);
+    background: linear-gradient(90deg, rgba(83, 85, 119, 1) 9%, rgba(108, 144, 171, 1) 46%, rgba(114, 179, 182, 1) 100%);
+    grid-row: 3/4;
+    border: 3px solid #000;
+    border-radius: 5px;
+}
+
+.content3 {
+    /* background-color: lightsteelblue; */
+    background: rgb(83, 85, 119);
+    background: linear-gradient(90deg, rgba(83, 85, 119, 1) 9%, rgba(108, 144, 171, 1) 46%, rgba(114, 179, 182, 1) 100%);
+    grid-row: 3/4;
+    border: 3px solid #000;
+    border-radius: 5px;
+}
+
+.foot {
+    /* background-color: teal; */
+    background: rgb(83, 85, 119);
+    background: linear-gradient(90deg, rgba(83, 85, 119, 1) 9%, rgba(113, 114, 159, 1) 46%, rgba(117, 118, 164, 1) 100%);
+    grid-column: 1/4;
+    border: 3px solid #000;
+    border-radius: 5px;
+}
